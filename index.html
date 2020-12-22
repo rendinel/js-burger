@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Burger Chart</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+            <nav class="burger-nav">
+                <div class="title-burger-nav"> <h1>Create Your Burger</h1> </div>
+                <div class="img-burger-nav"> <img src="images/burger-top.png" alt=""> </div>
+            </nav>
+
+            <main class="burger-main">
+
+                <div class="burger-name-container" >
+                    <input type="text" name="burger-name" id="burger-name" placeholder="Name your burger">
+                </div>
+
+                <div class='ingredienti-container'>
+                    <div class="group-1">
+
+                        <div class="single-ingredient-container">
+                            <img src="images/cheese.svg" alt="">
+                            <label for="cheese">Cheese</label>
+                            <input type="checkbox" id="cheese" name="list[]" value='5'>
+                        </div>
+
+                        <div class="single-ingredient-container">
+                            <img src="images/fried-egg.svg" alt="">
+                            <label for="egg">Egg</label>
+                            <input type="checkbox" id="egg" name="list[]" value='6'>
+                        </div>
+
+                        <div class="single-ingredient-container">
+                            <img src="images/mustard.svg" alt="">
+                            <label for="mustard">Mustard</label>
+                            <input type="checkbox" id="mustard" name="list[]" value='2'>
+                        </div>
+              
+                    </div>
+
+                    <div class="group-2">
+
+                        <div class="single-ingredient-container">
+                            <img src="images/tomato.svg" alt="">
+                            <label for="tomato">Tomato</label>
+                            <input type="checkbox" id="tomato" name="list[]" value='4'>
+                        </div>
+
+                        <div class="single-ingredient-container">
+                            <img src="images/lettuce.svg" alt="">
+                            <label for="lettuce">Lettuce</label>
+                            <input type="checkbox" id="lettuce" name="list[]" value='2'>
+                        </div>
+
+                        <div class="single-ingredient-container">
+                            <img src="images/ketchup.svg" alt="">
+                            <label for="ketchup">Ketchup</label>
+                            <input type="checkbox" id="ketchup" name="list[]" value='3'>
+                        </div>
+                            
+                    </div>
+                  </div>
+
+                  <div class="discount-container">
+
+                    <input type="text" name="coupon" id="coupon" placeholder="Inserisci coupon">
+              
+                    <button id='checkout' type="button" name="button">Calculate</button>
+
+                  </div>
+
+
+
+            </main>
+
+            <footer class="burger-footer">
+                <div class="price-footer"> <h2>Your Price</h2> </div>
+                <!-- svuotare dopo per far stampare risultato da js -->
+                <div class="cost"> <h2>$50</h2> </div>
+            </footer>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
