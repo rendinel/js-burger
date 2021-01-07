@@ -15,15 +15,25 @@
     height: 100%;
     width: 1200px;
     margin: 0 auto;
-    background-color: #FFFFFF;;
+    background-color: #FFFFFF;
   }
 /* inizio classi nav */
+.burger-name-container{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#burger-name{
+    border: none;
+    font-size: 35px;;
+}
+
 .burger-nav{
     display: flex;
     flex-direction: row;
     height: 10%;
     background-color:#FDBB40;
     justify-content: space-between;
+    padding-left: 15px;
 }
 
 .burger-nav > div {
@@ -34,7 +44,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end ;
+    justify-content: flex-end;
+    font-size: 25px;
+    padding-bottom: 15px;
 }
 
 /* .img-burger-nav{
@@ -50,42 +62,75 @@
     height: auto;
    }
 
-   .ingredienti-container{
-       display: flex;
-       flex-direction: row;
-   }
+ 
 
-   .group-1, .group-2{
-       display: flex;
-       flex-direction: column;
-       border: 2px solid black;
-       width: 40%;
-   }
-
-   .single-ingredient-container{
-       border: 2px solid red;
-       display: flex;
-       flex-direction: row;
-   }
-
-   .single-ingredient-container > img{
-       width: 74.33px;
-       height: 74.33px;
-   }
-
-   /* .group-2{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-   } */
 /* fine classi nav    */
 
 /* inizio classi main */
 .burger-main{
   height: 80%;
-  border: 2px solid blue;  
   display: flex;
   flex-direction: column;
+  padding-left: 15px;
+}
+
+.ingredienti-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.group-1, .group-2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.single-ingredient-container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.single-ingredient-container > img{
+    width: 74.33px;
+    height: 74.33px;
+}
+
+.disocunt-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.discount-container > span{
+    font-size: 20px;
+}
+
+.button-discount-container{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-top: 40px;
+}
+
+#coupon{
+ background-color: #FFF5E2;
+ border: none;
+ width: 70%;
+ height: 25px;
+ border-radius: 5px;
+}
+
+#checkout{
+ margin-right: 15px;
+ width: 150px;
+ height: 50px ;
+ background-color: #FD7F40;
+ border: 2px solid #000;
 }
 
 /* fine classi main */
@@ -97,6 +142,8 @@
     justify-content: space-between;
     height: 10%;
     background-color:#D33359;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .burger-footer > div {

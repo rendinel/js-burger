@@ -23,6 +23,10 @@
                     <input type="text" name="burger-name" id="burger-name" placeholder="Name your burger">
                 </div>
 
+                <div class="ingredient-title-container">
+                    <h2>Ingredients</h2>
+                </div>
+
                 <div class='ingredienti-container'>
                     <div class="group-1">
 
@@ -30,18 +34,21 @@
                             <img src="images/cheese.svg" alt="">
                             <label for="cheese">Cheese</label>
                             <input type="checkbox" id="cheese" name="list[]" value='5'>
+                            <span>add</span>
                         </div>
 
                         <div class="single-ingredient-container">
                             <img src="images/fried-egg.svg" alt="">
                             <label for="egg">Egg</label>
                             <input type="checkbox" id="egg" name="list[]" value='6'>
+                            <span>add</span>
                         </div>
 
                         <div class="single-ingredient-container">
                             <img src="images/mustard.svg" alt="">
                             <label for="mustard">Mustard</label>
                             <input type="checkbox" id="mustard" name="list[]" value='2'>
+                            <span>add</span>
                         </div>
               
                     </div>
@@ -52,29 +59,33 @@
                             <img src="images/tomato.svg" alt="">
                             <label for="tomato">Tomato</label>
                             <input type="checkbox" id="tomato" name="list[]" value='4'>
+                            <span>add</span>
                         </div>
 
                         <div class="single-ingredient-container">
                             <img src="images/lettuce.svg" alt="">
                             <label for="lettuce">Lettuce</label>
                             <input type="checkbox" id="lettuce" name="list[]" value='2'>
+                            <span>add</span>
                         </div>
 
                         <div class="single-ingredient-container">
                             <img src="images/ketchup.svg" alt="">
                             <label for="ketchup">Ketchup</label>
                             <input type="checkbox" id="ketchup" name="list[]" value='3'>
+                            <span>add</span>
                         </div>
                             
                     </div>
                   </div>
 
                   <div class="discount-container">
-
+                    <span>Discount Coupon</span>
                     <input type="text" name="coupon" id="coupon" placeholder="Inserisci coupon">
-              
-                    <button id='checkout' type="button" name="button">Calculate</button>
+                  </div>
 
+                  <div class="button-discount-container">
+                    <button id='checkout' type="button" name="button">Calculate</button>
                   </div>
 
 
@@ -83,13 +94,13 @@
 
             <footer class="burger-footer">
                 <div class="price-footer"> <h2>Your Price</h2> </div>
-                <!-- svuotare dopo per far stampare risultato da js -->
-                <div class="cost"> <h2>$50</h2> </div>
+                <div class="cost">  </div>
             </footer>
 
         </div>
 
     </div>
-    
+
+    <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
